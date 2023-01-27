@@ -21,7 +21,7 @@ body {
   opacity: 1;
 }
 
-.company-logo{
+.company-logo {
   position: absolute;
   top: 106px;
   left: 906px;
@@ -48,7 +48,7 @@ body {
   font-weight: bold;
 }
 
-.text-loginHeading{
+.text-loginHeading {
   position: absolute;
   top: 330px;
   left: 904px;
@@ -108,10 +108,10 @@ button {
   letter-spacing: 0px;
   color: #adadad;
   opacity: 1;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-.text-question{
+.text-question {
   position: absolute;
   top: 595px;
   left: 906px;
@@ -123,8 +123,8 @@ button {
   opacity: 1;
 }
 
-.text-registerHere{
-  text-decoration:none;
+.text-registerHere {
+  text-decoration: none;
   color: #c8242f;
 }
 
@@ -133,4 +133,121 @@ button {
 }
 ::placeholder {
   padding: 14.63px 346.5px 14.37px 14.5px;
+}
+
+/* --------------------- dashboard -------------------------- */
+nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1560px;
+  height: 80px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.navbar-menu {
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+}
+.navbar-logo {
+  width: 142px;
+  height: 30px;
+  opacity: 1;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-left > * {
+  padding: 25px;
+}
+.navbar-menu {
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+}
+
+.navbar-logo {
+  padding-right: 50px;
+  width: 142px;
+  height: 30px;
+  opacity: 1;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-left: 10px;
+  justify-content: space-between;
+}
+
+.navbar-right-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-right-right > * {
+  margin: 0px 20px;
+}
+.navbar-profile {
+  display: flex;
+}
+.navbar-profile > * {
+  padding: 5px;
+}
+
+.profile-img {
+  width: 44px;
+  height: 44px;
+}
+
+.sidebar {
+  top: 80px;
+  left: 0px;
+  width: 242px;
+  height: 1279px;
+  background: #ffffff;
+  opacity: 1;
+}
+
+.sidebar > li {
+  display: flex;
+  align-items: center;
+  left: 10px;
+  width: 183px;
+  height: 43px;
+  list-style: none;
+  margin: 0px 30px;
+}
+
+.sidebar > li > a {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+
+  width: 183px;
+  height: 43px;
+  text-decoration: none;
+  color: inherit;
+}
+.sidebar > li :hover {
+  background-color: #fff3f4;
+}
+
+.sidebar-icon {
+  margin: 12px;
+  height: 15px;
+  width: 15px;
 }
