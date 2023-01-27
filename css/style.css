@@ -423,3 +423,23 @@ nav {
   color: #3e3e3e;
   opacity: 1;
 }
+
+.paid {
+  text-align: center;
+  background-color: #ebffef;
+  border-radius: 5px;
+  color: #3cdd5f !important;
+}
+.failed {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ebffef;
+  color: #c8242f !important;
+}
+.pending {
+  text-align: center;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  color: #bababa !important;
+}
