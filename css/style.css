@@ -89,7 +89,7 @@ button {
   left: 906px;
   width: 138px;
   height: 45px;
-  background: #c8242f 0% 0% no-repeat padding-box;
+  background: #c8242f;
   border-radius: 23px;
   opacity: 1;
   position: absolute;
@@ -136,6 +136,11 @@ button {
 }
 
 /* --------------------- dashboard -------------------------- */
+.page {
+  width: 1560px;
+  height: 1360px;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -188,8 +193,6 @@ nav {
 .navbar-search {
   display: flex;
   align-items: center;
-  margin-left: 10px;
-  margin-left: 10px;
   justify-content: space-between;
 }
 
@@ -229,6 +232,7 @@ nav {
   width: 183px;
   height: 43px;
   list-style: none;
+  font: normal normal normal 16px/21px Roboto;
   margin: 0px 30px;
 }
 
@@ -236,7 +240,6 @@ nav {
   display: flex;
   align-items: center;
   border-radius: 5px;
-
   width: 183px;
   height: 43px;
   text-decoration: none;
@@ -244,10 +247,179 @@ nav {
 }
 .sidebar > li :hover {
   background-color: #fff3f4;
+  /* color: #c8242f; */
 }
 
 .sidebar-icon {
   margin: 12px;
   height: 15px;
   width: 15px;
+}
+
+/* --------------------- dashboard-main -------------------------- */
+
+.dashboard-content {
+  width: 100%;
+  margin-left: 48px;
+}
+
+.dashboard-main {
+  display: flex;
+}
+
+.product-sales-data {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 116px;
+}
+
+.product-sales-data > .data {
+  width: 219px;
+  height: 116px;
+}
+.product-sales-data > .data > .dashboard-icon {
+  width: 33px;
+  height: 33px;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.data > div {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 50px;
+}
+
+.h4 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* --------------------- dashboard-main -------------------------- */
+.graphical-data {
+  margin-top: 2rem;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.graph-div {
+  background: #ffffff;
+  margin-right: 2rem;
+  width: 802px;
+  height: 400px;
+}
+
+.graph-text {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 29px 29px 29px;
+}
+
+.graph {
+  margin-top: 20px;
+  margin: 0 47px 0 28px;
+}
+
+.graph-text > span {
+  width: 43px;
+  height: 29px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 0px;
+  color: #3e3e3e;
+  opacity: 1;
+}
+.graph-text > div {
+  margin-right: 50px;
+}
+.graph-text > div > span {
+  width: 108px;
+  height: 16px;
+  text-align: left;
+  font: normal normal normal 12px/16px Roboto;
+  letter-spacing: 0px;
+  color: #adadad;
+  opacity: 1;
+  margin-right: 15px;
+}
+
+.graph-text > div > span:last-child {
+  color: #c8242f;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.piechart-div {
+  background: #ffffff;
+  width: 100%;
+}
+
+.piechart-imgAndText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.piechart-imgAndText > ul {
+  margin-top: 0px;
+  margin-left: 50px;
+  columns: 2;
+  column-gap: 25px;
+
+  background: #fffff;
+  padding-left: 20px;
+}
+
+/* ----------- tabular data ---------- */
+
+.tabular-data {
+  margin-top: 2rem;
+  background-color: #ffffff;
+}
+
+.tabular-data > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.view-allDiv {
+  color: #c8242f;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.invoice-table {
+  margin-left: 50px;
+  border-collapse: collapse;
+}
+.invoice-table > thead > tr > th {
+  padding: 10px;
+  font: normal normal normal 15px/20px Roboto;
+  letter-spacing: 1.5px;
+  color: #adadad;
+  opacity: 1;
+}
+
+.invoice-table > tbody > tr > td {
+  padding: 10px 40px;
+  border-top: 1px solid #adadad;
+  text-align: left;
+  font: normal normal normal 15px/20px Roboto;
+  letter-spacing: 0px;
+  color: #3e3e3e;
+  opacity: 1;
 }
