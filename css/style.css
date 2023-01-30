@@ -1,3 +1,6 @@
+:root {
+  --input-border: #adadad;
+}
 body {
   background: #fafafa;
 }
@@ -84,7 +87,7 @@ body {
   opacity: 1;
 }
 
-button {
+.loginBtn {
   top: 540px;
   left: 906px;
   width: 138px;
@@ -445,23 +448,106 @@ nav {
 }
 
 /* ------------ inner page ------------------------------------------------------- */
-.input-fieldSet-1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-fieldSet-1 > * {
-  height: 40px;
+.box {
+  border: 1px solid var(--input-border);
   border-radius: 5px;
-  margin-bottom: 10px;
+  color: #adadad;
 }
 
-.input-fieldSet-1 > textarea {
-  height: 50px;
+/* borders */
+.dashboard-content {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
 }
 
-/* ------------ row-1 --------------------- */
-.row-1 {
+/* .container-2 {
+  border: 1px solid black;
+} */
+
+.select {
+  color: #adadad;
+}
+
+.input-width-3 {
+  width: 400px;
+}
+
+.input-width-2 {
+  width: 600px;
+}
+
+.margin-right {
+  margin-right: 30px;
+}
+
+.btn-width-20 {
+  width: 120px;
+}
+
+.other-file-upload {
   background: #ffffff;
-  padding: 10px 30px;
+  color: #c8242f;
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+  accent-color: #c8242f;
+}
+input[type="radio"] :hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  accent-color: #c8242f;
+}
+
+.radio > span {
+  border: none;
+  margin-left: 3px;
+}
+
+/* snackbar */
+
+.snackbar object {
+  height: 30px;
+  width: 30px;
+}
+
+.snackbar > div {
+  height: 45px;
+}
+
+.container-2 {
+  padding: 20px;
+}
+
+/* tabs */
+.tab {
+  font-weight: bold;
+  color: #adadad;
+  cursor: pointer;
+}
+
+.tab:hover {
+  color: #c8242f;
+  text-decoration: underline;
+  text-underline-offset: 22px;
+}
+
+.legend {
+  left: 5px;
+  top: 0;
+  padding: 20px;
+  color: #adadad;
+  transition: 0.3s;
+}
+
+.input-bx input:focus ~ span {
+  transform: translateX(10px) translateY(-1px);
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0 10px;
+  background: #ffffff;
 }
