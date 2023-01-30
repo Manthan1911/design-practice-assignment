@@ -2,35 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-index.css">
 </head>
 
-<body>
+<body class="d-flex items-center justify-content-center">
 
-    <div class="main">
-        <div class="leftDiv">
-            <img class="leftDiv-img" src="./images/hero-image.png" alt="img not found">
+    <div class="main_container container d-flex px-5 flex-column flex-sm-row">
+
+        <div class="d-flex align-items-center justify-content-center flex-grow-1 h-100">
+            <div class="left_img_container img_container overflow-hidden  border border-white rounded-circle">
+                <img src="./images/hero-image.png" alt="hero-image" />
+            </div>
         </div>
-        <div class="rightDiv">
-            <img class="company-logo" src="./images/logo.svg" alt="no logo found">
-            <p class="text-heading">We are <span class="text-color">experts</span> in business,marketing,growth,&sales.
-            </p>
-            <p class="text-loginHeading">Login into your account</p>
-            <form>
-                <input class="input-box-username" type="text" id="username" placeholder="Username"><br>
-                <input class="input-box-password" type="password" id="password" placeholder="Password"><br>
-                <button class="loginBtn">Login</button>
-                <a class="text-forgotPassword" href="#">Forgot Password?</a>
-            </form>
-            <p class="text-question">Are you a new member?<a class="text-registerHere" href="#">Register Here</a></p>
+        <!-- right div -->
+        <div class="flex-grow-1 h-100 d-flex align-items-center justify-content-center">
+            <!-- form -->
+            <div class="form-container">
+                <img class="company-logo mb-3" src="./images/logo.svg" alt="no logo found">
+                <p class="text-heading mt-1 mb-3 fs-1 lh-base">We are <span class="text-red fw-bold">experts</span>
+                    in
+                    business, marketing,growth,&sales.</p>
+                <p class="text-loginHeading mt-3 fs-5">Login into your account</p>
+                <form class="d-flex flex-column mb-3">
+                    <input class="input-box p-2 mb-3" style="width:90% !important;" type="text" id="username"
+                        placeholder="Username">
+                    <input class="input-box p-2 mt-2 mb-3" style="width:90% !important;" type="password" id="password"
+                        placeholder="Password">
+                    <div class="d-flex align-items-center justify-content-between mt-2">
+                        <button id="loginBtn" class="btn btn-danger rounded-5 px-5 py-2 fs-6 ">Login</button>
+                        <a class="text-forgotPassword text-decoration-none text-grey" href="#">Forgot Password?</a>
+                    </div>
+                </form>
+                <p class="text-question mt-2 text-grey">Are you a new member?<a
+                        class="text-decoration-none text-red fw-semibold " href="#">Register
+                        Here</a>
+                </p>
+            </div>
+
         </div>
     </div>
-
 </body>
 
 </html>
