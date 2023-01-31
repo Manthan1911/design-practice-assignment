@@ -1,0 +1,109 @@
+@media only screen and (max-width: 1440px) {
+  .graphical-data {
+    flex-direction: column !important;
+  }
+
+  .graph-div {
+    min-width: 100%;
+  }
+
+  .piechart-div {
+    min-width: 100%;
+  }
+
+  .piechart {
+    margin-left: 0;
+    height: 22rem;
+    width: 22rem;
+  }
+
+  .piechart-imgAndText > ul {
+    columns: 2;
+    padding-left: 6rem;
+  }
+
+  .invoice-table-div {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 0;
+  }
+  .invoice-table {
+    margin-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  .invoice-table > thead > tr > th,
+  .invoice-table > tbody > tr > td {
+    font-size: 1rem !important;
+    padding: 1.5rem !important;
+    border: 1px solid #d3d3d3;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none !important;
+  }
+  .navbar-search {
+    display: none !important;
+  }
+  .dashboard-navbar {
+    justify-content: space-between;
+  }
+  .content-board {
+    width: 100vw;
+  }
+  .piechart {
+    height: 18rem;
+    width: 18rem;
+  }
+
+  .piechart-imgAndText > ul {
+    columns: 2;
+  }
+  .invoice-table > thead > tr > th,
+  .invoice-table > tbody > tr > td {
+    font-size: 1rem !important;
+    padding: 0.8rem !important;
+    border: 1px solid #d3d3d3;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+  .navbar-right > .navbar-notification {
+    display: none;
+  }
+  .content-board {
+    width: 100vw;
+  }
+  .sales-data-icon {
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+  .sales-data-number {
+    font-size: 1.8rem;
+  }
+  .sales-data-text {
+    font-size: 1rem;
+  }
+  .graph-div {
+    width: 100% !important;
+  }
+  .graph-text > * {
+    font-size: 1rem !important;
+  }
+  .piechart-div {
+    width: 100% !important;
+  }
+  .piechart {
+    height: 15rem;
+    width: 15rem;
+  }
+  .piechart-imgAndText > ul {
+    padding: 0 0 0 5rem;
+    columns: 2;
+  }
+}

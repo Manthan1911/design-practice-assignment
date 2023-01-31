@@ -7,64 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Inner Page</title>
+    <link rel="stylesheet" href="./css/responsive-innerpage.css">
+    <title>Dashboard</title>
 </head>
 
-<body>
+<body class="position-relative">
 
-    <div class="page">
-        <nav>
-            <div class="navbar-left">
-                <object class="navbar-menu" data="./images/menu-bar.svg"></object>
-                <object class="navbar-logo" data="./images/logo.svg"></object>
-            </div>
-            <div class="navbar-right">
-                <div class="navbar-search">
-                    <object class="search-icon" data="./images/search-icon.svg" width="24px" height="24px"></object>
-                    <p class="sarch-text">Search</p>
-                </div>
-                <div class="navbar-right-right">
-                    <div>
-                        <object class="noti-icon" data="./images/notification-icon.svg"></object>
-                    </div>
-                    <div class="navbar-profile">
-                        <img class="profile-img" src="./images/profile.png" alt="profile image">
-                        <p>John Doe</p>
-                        <object data="./images/downward-arrow.svg"></object>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="dashboard-main">
-            <div class="sidebar">
-                <li>
-                    <a href="#"><object class="sidebar-icon" data="./images/dashboard-active.svg"></object>Dashboard</a>
-                </li>
-                <li>
-                    <a href="#"><object class="sidebar-icon" data="./images/graph-default.svg"></object>Analysis</a>
-                </li>
-                <li>
-                    <a href="#"><object class="sidebar-icon" data="./images/inbox-default.svg"></object>Inbox</a>
-                </li>
-                <li>
-                    <a href="#"><object class="sidebar-icon" data="./images/clock-default.svg"></object>History</a>
-                </li>
-                <li>
-                    <a href="#"><object class="sidebar-icon" data="./images/user-default.svg"></object>Users</a>
-                </li>
-                <li>
-                    <a href="#"><object class="sidebar-icon"
-                            data="./images/maintenance-default.svg"></object>Maintenance</a>
-                </li>
-                <li>
-                    <a href="#"><object class="sidebar-icon" data="./images/setting-default.svg"></object>Setting</a>
-                </li>
-            </div>
-            <div class="dashboard-content">
-                <h1 class="dashboard-heading">Analysis</h1>
+    <nav class="dashboard-navbar position-fixed top-0 start-0 end-0 d-flex align-items-center  px-4 py-4 gap-5">
+        <!-- nav-left -->
+        <div class="navbar-left d-flex  gap-4 align-items-center">
+            <object class="navbar-menu dashboard__icon" data="./images/menu-bar.svg"></object>
+            <object class="dashboard-navbar__logo d-none d-sm-block" data="./images/logo.svg"></object>
+            <object class="dashboard-navbar__logo d-block d-sm-none" data="./images/favicon.ico"></object>
+        </div>
 
-                <div class="container container-2">
-                    <h2 class="dashboard-heading mt-3">One Column</h2>
+        <!-- nav-right -->
+        <div class="navbar-search d-flex align-items-center w-100 gap-3">
+            <object class="search-icon dashboard__icon" data="./images/search-icon.svg" width="24px"
+                height="24px"></object>
+            <p class="sarch-text m-0">Search</p>
+        </div>
+        <div class="navbar-right d-flex align-items-center gap-5">
+            <div class="navbar-notification">
+                <object class="noti-icon dashboard__icon" data="./images/notification-icon.svg"></object>
+            </div>
+            <div class="navbar-profile d-flex align-items-center gap-3">
+                <img class="dashboard-profile__img " src="./images/profile.png" alt="profile image">
+                <p class="dashboard-profile-name d-none d-sm-block m-0">John Doe</p>
+                <object class="icon" data="./images/downward-arrow.svg"></object>
+            </div>
+        </div>
+    </nav>
+    <div class="dashboard-main d-flex">
+        <ul class="sidebar h-100 p-4 pt-3 d-flex flex-column align-items-center gap-3">
+            <li class="d-flex align-items-center px-3">
+                <a class="text-decoration-none text-reset d-flex align-items-center gap-2" href="#"><object
+                        class="sidebar-icon dashboard__icon" data="./images/dashboard-active.svg"
+                        type=""></object>Dashboard</a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+                <a class="text-decoration-none text-reset d-flex align-items-center gap-2" href="#"><object
+                        class="sidebar-icon" data="./images/graph-default.svg" type=""></object>Analysis</a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+                <a class="text-decoration-none text-reset d-flex align-items-center gap-2" href="#"><object
+                        class="sidebar-icon" data="./images/inbox-default.svg" type=""></object>Inbox</a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+                <a class="text-decoration-none text-reset d-flex align-items-center gap-2" href="#"><object
+                        class="sidebar-icon" data="./images/clock-default.svg" type=""></object>History</a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+                <a class="text-decoration-none text-reset d-flex align-items-center gap-2" href="#"><object
+                        class="sidebar-icon" data="./images/user-default.svg" type=""></object>Users</a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+                <a class="text-decoration-none text-reset d-flex align-items-center gap-2" href="#"><object
+                        class="sidebar-icon" data="./images/maintenance-default.svg" type=""></object>Maintenance</a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+                <a class="text-decoration-none text-reset d-flex align-items-center gap-2" href="#"><object
+                        class="sidebar-icon" data="./images/setting-default.svg" type=""></object>Setting</a>
+            </li>
+        </ul>
+        <div class="content-board h-100 w-100 p-2 p-sm-5">
+            <h1 class="dashboard-heading">Analysis</h1>
+
+            <div class="start-oneColumn shadow-sm p-sm-2">
+                <h2 class=" mt-3">One Column</h2>
+                <div class="container  p-3">
                     <!-- row-1 -->
                     <div class="input-fieldSet-1 row g-2 d-flex align-items-center flex-column">
                         <input class="select col-12 p-2 my-2 rounded-2 border border-2" type="text" placeholder="Name">
@@ -79,16 +90,17 @@
                             placeholder="Multiple Line"></textarea>
                     </div>
 
-                    <!-- row-2 -->
-                    <h2 class="mt-5">Two Column</h2>
-                    <div class="row gy-3 gx-1">
-                        <input class="box input-width-2 margin-right col-6 p-2 rounded-2 border border-2" type="text"
-                            placeholder="Name">
-                        <input class="box input-width-2 col-6 p-2 rounded-2 border border-2" type="text"
-                            placeholder="Username">
-                        <input class="box input-width-2 margin-right col-6 p-2 rounded-2 border border-2" type="text"
-                            placeholder="Password">
-                        <select class="box input-width-2 col-6 p-2 rounded-2 border border-2 select" name="Dropdown"
+                </div>
+                <!-- row-2 -->
+                <h2 class="mt-5">Two Column</h2>
+                <div class="container">
+                    <div class="row gap-sm-3 gx-1">
+                        <input class="box col-sm p-2 rounded-2 border border-2 mb-2" type="text" placeholder="Name">
+                        <input class="box col-sm p-2 rounded-2 border border-2 mb-2" type="text" placeholder="Username">
+                    </div>
+                    <div class="row gap-sm-3 gx-1">
+                        <input class="box col-sm p-2 rounded-2 border border-2 mb-2" type="text" placeholder="Password">
+                        <select class="box col-sm p-2 rounded-2 border border-2 select mb-2" name="Dropdown"
                             aria-placeholder="dropdown" class="dropdown">
                             <option value="name" selected>Dropdown</option>
                             <option value="name">name</option>
@@ -96,136 +108,153 @@
                             <option value="age">age</option>
                         </select>
                     </div>
-                    <!-- row-3 -->
-                    <h2 class="mt-5">Three Column</h2>
-                    <div class="d-flex justify-content-between">
-                        <div class="input-bx position-relative">
-                            <input class="input-width-3 box m-2 p-2 rounded-2 border border-2" type="text">
-                            <span class="legend position-absolute">Focus</span>
+                </div>
+
+                <!-- row-3 -->
+                <h2 class="mt-5">Three Column</h2>
+                <div class="container mt-3">
+
+                    <div class="row">
+                        <div class="input-bx col-sm position-relative mb-4 mb-sm-0">
+                            <input class="w-100 p-2 rounded-2 border border-2" type="text">
+                            <span class="legend mx-2 p-2 position-absolute">Focus</span>
                         </div>
-                        <div class="input-bx position-relative">
-                            <input class="input-width-3 box m-2 p-2 rounded-2 border border-2" type="text">
-                            <span class="legend position-absolute">Password</span>
+                        <div class="input-bx col-sm position-relative mb-4 mb-sm-0">
+                            <input class="w-100 p-2 rounded-2 border border-2" type="text">
+                            <span class="legend mx-2 p-2 position-absolute">Password</span>
                         </div>
-                        <div class="input-bx position-relative">
-                            <input class="input-width-3 box m-2 p-2 rounded-2 border border-2" type="text" disabled>
-                            <span class="legend position-absolute ">disabled</span>
-                        </div>
-                    </div>
-
-                    <!-- row-4 -->
-                    <h2 class="mt-5">Four Column</h2>
-                    <div class="row gx-1">
-                        <input class="box focus col-3 p-2 rounded-2 border border-2" type="text"
-                            placeholder="Designation">
-                        <input class="box col-3 p-2 rounded-2 border border-2" type="text" placeholder="Name">
-                        <input class="box col-3 p-2 rounded-2 border border-2" type="text" placeholder="Username">
-                        <select class="box col-3 p-2 rounded-2 border border-2" name="Dropdown"
-                            aria-placeholder="dropdown" class="dropdown">
-                            <option value="name" selected>select</option>
-                            <option value="name">name</option>
-                            <option value="surname">surname</option>
-                            <option value="age">age</option>
-                        </select>
-
-                        <p class="col-3 px-3 text-danger">Enter valid data</p>
-                        <p class="select px-3 col-9">Enter your full name as per id</p>
-                    </div>
-
-                    <!-- Other -->
-                    <h2 class="mt-5">Other Design Elements</h2>
-
-                    <!-- file upload -->
-                    <h4 class="mx-1 mt-4 mb-3">File Upload</h4>
-                    <div class="row mt-3 ">
-                        <button
-                            class="other-file-upload btn-width-20 ms-3 rounded-5 d-flex justify-content-center align-items-center border-danger">
-
-                            <object data="./images/cloud-upload-icon.svg"></object>
-                            Upload
-                        </button>
-                        <p class="select col-1 text-nowrap mt-2">No item Selected</p>
-                    </div>
-
-                    <!-- Radio -->
-                    <h4 class="mx-1 mt-5 mb-3">Radio button</h4>
-                    <div class="row mx-1">
-                        <div class="radio col-1">
-                            <input type="radio" name="option">
-                            <span>Option1</span>
-                        </div>
-                        <div class="radio col-1">
-                            <input type="radio" name="option" checked>
-                            <span>Option2</span>
+                        <div class="input-bx col-sm position-relative mb-4 mb-sm-0">
+                            <input class="w-100 p-2 rounded-2 border border-2" type="text" disabled>
+                            <span class="legend mx-2 p-2 position-absolute ">disabled</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- checkbox -->
-                    <h4 class="mx-1 mt-5 mb-3">Checkbox</h4>
-                    <div class="row mx-1">
-                        <div class="radio col-1">
-                            <input type="checkbox">
-                            <span>Option1</span>
+
+                <!-- row-4 -->
+                <h2 class="mt-5">Four Column</h2>
+                <div class="container">
+                    <div class="row gap-2 gx-1">
+                        <div class="col-md">
+                            <input class="box focus p-2 w-100 rounded-2 border border-2" type="text"
+                                placeholder="Designation">
+                            <p class="text-danger px-2 m-0 p-0">Enter valid data</p>
                         </div>
-                        <div class="radio col-1">
-                            <input type="checkbox" checked>
-                            <span>Option2</span>
+                        <div class="col-md">
+                            <input class="box p-2 w-100 rounded-2 border border-2" type="text" placeholder="Name">
+                            <p class="select px-2 m-0 p-0">Enter your full name as per id</p>
+                        </div>
+                        <div class="col-md">
+                            <input class="box p-2 w-100 rounded-2 border border-2" type="text" placeholder="Username">
+                        </div>
+                        <div class="col-md">
+                            <select class="box p-3 w-100 rounded-2 border border-2" name="Dropdown"
+                                aria-placeholder="dropdown" class="dropdown">
+                                <option value="name" selected>select</option>
+                                <option value="name">name</option>
+                                <option value="surname">surname</option>
+                                <option value="age">age</option>
+                            </select>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Snack Bar -->
-                    <h4 class="mx-1 mt-5 mb-3">Sanck Bar</h4>
-                    <div class="snackbar d-flex justify-content-between w-100 ">
-                        <div class="d-flex align-items-center input-width-2 rounded-2 border border-2 border-danger ">
+                <!-- Other -->
+                <h2 class="mt-5">Other Design Elements</h2>
+
+                <!-- file upload -->
+                <h4 class="mx-1 mt-4 mb-3">File Upload</h4>
+                <div class="row mt-3">
+                    <button
+                        class="other-file-upload btn-width-20 ms-3 rounded-5 d-flex justify-content-center align-items-center border-danger">
+
+                        <object data="./images/cloud-upload-icon.svg"></object>
+                        Upload
+                    </button>
+                    <p class="select col-1 text-nowrap mt-2">No item Selected</p>
+                </div>
+
+                <!-- Radio -->
+                <h4 class="mx-1 mt-5 mb-3">Radio button</h4>
+                <div>
+                    <span class="mx-2">
+                        <input type="radio" name="option">
+                        <span>Option1</span>
+                    </span>
+                    <span class="mx-2">
+                        <input type="radio" name="option" checked>
+                        <span>Option2</span>
+                    </span>
+                </div>
+
+                <!-- checkbox -->
+                <h4 class="mx-1 mt-5 mb-3">Checkbox</h4>
+                <div class="mx-2">
+                    <span class="radio mx-2">
+                        <input type="checkbox">
+                        <span>Option1</span>
+                    </span>
+                    <span class="radio mx-2">
+                        <input type="checkbox" checked>
+                        <span>Option2</span>
+                    </span>
+                </div>
+
+
+                <!-- Snack Bar -->
+                <h4 class="mx-1 mt-5 mb-3">Sanck Bar</h4>
+                <div class="container">
+                    <div class="snackbar row gap-2 gap-sm-3 gx-1 mb-2">
+                        <div class="col-sm d-flex align-items-center rounded-2 border border-2 border-danger ">
                             <object class="mx-2" data="./images/error-icon.svg"></object>
                             <p class="mt-3 mx-2 text-danger">This is an error message</p>
                         </div>
-                        <div class="d-flex align-items-center input-width-2 rounded-2 border border-2 border-info">
+                        <div class="col-sm d-flex align-items-center rounded-2 border border-2 border-info">
                             <object class="mx-2" data="./images/info-icon.svg"></object>
                             <p class="mt-3 mx-2 text-info">This is an information message</p>
                         </div>
                     </div>
-                    <div class="snackbar d-flex justify-content-between w-100 mt-3">
-                        <div class="d-flex align-items-center input-width-2 rounded-2 border border-2 border-warning">
+                    <div class="snackbar row gap-2 gap-sm-3 gx-1 mb-2">
+                        <div class="col-sm d-flex align-items-center rounded-2 border border-2 border-warning">
                             <object class="mx-2" data="./images/warning-icon.svg"></object>
                             <p class="mt-3 mx-2 text-warning">This is a warning message</p>
                         </div>
-                        <div class="d-flex align-items-center input-width-2 rounded-2 border border-2 border-success">
+                        <div class="col-sm d-flex align-items-center rounded-2 border border-2 border-success">
                             <object class="mx-2" data="./images/success-icon.svg"></object>
                             <p class="mt-3 mx-2 text-success">This is an success message</p>
                         </div>
                     </div>
-
-                    <!-- Call to Action -->
-                    <h4 class="mx-1 mt-5 mb-3">Call to action</h4>
-                    <button class="rounded-5 col-1 bg-danger text-white border-0 p-2 ">Primary</button>
-                    <button class="rounded-5 col-1 p-2 mx-2 border-danger text-danger bg-light">Secondary</button>
-
-                    <!-- Tabs -->
-                    <h4 class="mx-1 mt-5 mb-3">Tabs </h4>
-                    <div class=" d-flex mx-2 border-bottom">
-                        <p class="tab">Tab1</p>
-                        <p class="tab mx-3">Tab2</p>
-                        <p class="tab mx-3">Tab3</p>
-                    </div>
-
-                    <p class="mx-2 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam,
-                        blanditiis eos
-                        cupiditate
-                        corrupti praesentium, ipsa unde laudantium a dicta, debitis nisi voluptatum ratione? Vero harum
-                        laudantium quae aliquam eaque cumque.
-                        Quam iusto repellendus molestias enim? Aperiam mollitia eius blanditiis aut illum nesciunt
-                        culpa? Quam, cum necessitatibus! Voluptas at amet nostrum facere sint, id quasi dicta, autem
-                        quaerat nihil cumque ipsum!</p>
-
                 </div>
+
+                <!-- Call to Action -->
+                <h4 class="mx-1 mt-3 mb-3">Call to action</h4>
+                <div>
+                    <button class="rounded-5 bg-danger text-white border-0 py-2 px-3 mx-2">Primary</button>
+                    <button class="rounded-5 border-danger text-danger bg-light py-2 px-3 mx-2 ">Secondary</button>
+                </div>
+
+                <!-- Tabs -->
+                <h4 class="mx-1 mt-5 mb-3">Tabs </h4>
+                <div class=" d-flex mx-2 border-bottom">
+                    <p class="tab">Tab1</p>
+                    <p class="tab mx-3">Tab2</p>
+                    <p class="tab mx-3">Tab3</p>
+                </div>
+
+                <p class="last-para mx-2 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam,
+                    blanditiis
+                    eos cupiditate corrupti praesentium, ipsa unde laudantium a dicta, debitis nisi voluptatum ratione?
+                    Vero harum laudantium quae aliquam eaque cumque. Quam iusto repellendus molestias enim? Aperiam
+                    mollitia eius blanditiis aut illum nesciunt culpa? Quam, cum necessitatibus! Voluptas at amet
+                    nostrum facere sint, id quasi dicta, autem
+                    quaerat nihil cumque ipsum!
+                </p>
 
             </div>
         </div>
 
     </div>
-
-
+    </div>
 </body>
 
 </html>
